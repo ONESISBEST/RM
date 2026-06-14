@@ -32,7 +32,7 @@ class WallMapper:
         # 로봇 크기 원형 마스크 (navigation_preference 생성에 사용)
         self.robot_diameter_template = np.zeros((self.robot_diameter, self.robot_diameter), dtype=np.uint8)
         self.robot_diameter_template = cv.circle(self.robot_diameter_template,
-                                                  (self.robot_radius, self.robot_radius),
+                                                      (self.robot_radius, self.robot_radius),
                                                   self.robot_radius, 255, -1)
         self.robot_diameter_template = self.robot_diameter_template.astype(np.bool_)
 
